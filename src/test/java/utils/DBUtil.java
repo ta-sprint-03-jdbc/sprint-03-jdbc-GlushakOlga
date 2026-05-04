@@ -10,9 +10,9 @@ import java.util.Properties;
 public class DBUtil {
     public static Connection getConnection() throws SQLException {
         // Check if we're running in GitHub Actions
-        String dbName = System.getenv("POSTGRES_DB");
-        String dbUser = System.getenv("POSTGRES_USER");
-        String dbPassword = System.getenv("POSTGRES_PASSWORD");
+        String dbName = System.getenv("example");
+        String dbUser = System.getenv("olga");
+        String dbPassword = System.getenv("scorpi");
 
         try {
             if (dbName != null && dbUser != null && dbPassword != null) {
@@ -45,7 +45,7 @@ public class DBUtil {
                 // Fallback to hardcoded values
                 System.out.println("[DEBUG_LOG] Using hardcoded connection properties");
                 return DriverManager
-                        .getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "root");
+                        .getConnection("jdbc:postgresql://localhost:5432/postgres", "olga", "scorpi");
             }
         } catch (SQLException e) {
             System.out.println("[DEBUG_LOG] Database connection failed: " + e.getMessage());
@@ -56,7 +56,7 @@ public class DBUtil {
     public static int totalCount(String tableName) throws SQLException {
         String query = "SELECT count(*) FROM " + tableName;
         try (Connection conn = getConnection();
-             PreparedStatement statement = conn.prepareStatement(query)) {
+                PreparedStatement statement = conn.prepareStatement(query)) {
             try (ResultSet rs = statement.executeQuery()) {
                 if (rs.next()) {
                     return rs.getInt(1);
@@ -73,8 +73,8 @@ public class DBUtil {
         assert inputStream != null;
         // Use try-with-resources to ensure both the connection and statement are closed
         try (Connection connection = getConnection();
-             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-             Statement statement = connection.createStatement()) {
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                Statement statement = connection.createStatement()) {
 
             StringBuilder builder = new StringBuilder();
 
@@ -97,8 +97,8 @@ public class DBUtil {
                                 ++count
                                         + " Command successfully executed : "
                                         + builder.substring(
-                                        0,
-                                        Math.min(builder.length(), 15))
+                                                0,
+                                                Math.min(builder.length(), 15))
                                         + "...");
                         builder.setLength(0);
                     } catch (SQLException e) {
