@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dao.ChildDBTest" time="6.64" tests="6" errors="6" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dao.ChildDBTest" time="6.728" tests="6" errors="6" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk@21/21.0.11/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/surefire/surefirebooter-20260504121419873_3.jar /Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/surefire 2026-05-04T12-14-19_779-jvmRun1 surefire-20260504121419873_1tmp surefire_0-20260504121419873_2tmp"/>
+    <property name="sun.java.command" value="/Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/surefire/surefirebooter-20260507123651172_3.jar /Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/surefire 2026-05-07T12-36-51_070-jvmRun1 surefire-20260507123651172_1tmp surefire_0-20260507123651172_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/test-classes:/Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/classes:/Users/olga/.m2/repository/org/postgresql/postgresql/42.7.10/postgresql-42.7.10.jar:/Users/olga/.m2/repository/org/checkerframework/checker-qual/3.52.0/checker-qual-3.52.0.jar:/Users/olga/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/olga/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/olga/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/olga/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/olga/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/olga/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/olga/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/Users/olga/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar:/Users/olga/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar:/Users/olga/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar:/Users/olga/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/surefire/surefirebooter-20260504121419873_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/olga/Desktop/First Project/sprint-03-jdbc-GlushakOlga/target/surefire/surefirebooter-20260507123651172_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.11"/>
@@ -60,7 +60,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="updateShouldUpdateExistingChild" classname="dao.ChildDBTest" time="1.132">
+  <testcase name="updateShouldUpdateExistingChild" classname="dao.ChildDBTest" time="1.127">
     <error message="Failed to initialize pool: FATAL: role &quot;postgres&quot; does not exist" type="com.zaxxer.hikari.pool.HikariPool$PoolInitializationException"><![CDATA[com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -117,7 +117,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 18 Command successfully executed : insert into clu...
 ]]></system-err>
   </testcase>
-  <testcase name="addShouldAddChildAndReturnWithId" classname="dao.ChildDBTest" time="1.096">
+  <testcase name="addShouldAddChildAndReturnWithId" classname="dao.ChildDBTest" time="1.121">
     <error message="Failed to initialize pool: FATAL: role &quot;postgres&quot; does not exist" type="com.zaxxer.hikari.pool.HikariPool$PoolInitializationException"><![CDATA[com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -174,7 +174,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 18 Command successfully executed : insert into clu...
 ]]></system-err>
   </testcase>
-  <testcase name="deleteShouldDeleteExistingChild" classname="dao.ChildDBTest" time="1.086">
+  <testcase name="deleteShouldDeleteExistingChild" classname="dao.ChildDBTest" time="1.12">
     <error message="Failed to initialize pool: FATAL: role &quot;postgres&quot; does not exist" type="com.zaxxer.hikari.pool.HikariPool$PoolInitializationException"><![CDATA[com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -231,7 +231,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 18 Command successfully executed : insert into clu...
 ]]></system-err>
   </testcase>
-  <testcase name="findChildrenWithMinimumAgeShouldReturnChildrenWithMinimumAge" classname="dao.ChildDBTest" time="1.109">
+  <testcase name="findChildrenWithMinimumAgeShouldReturnChildrenWithMinimumAge" classname="dao.ChildDBTest" time="1.104">
     <error message="Failed to initialize pool: FATAL: role &quot;postgres&quot; does not exist" type="com.zaxxer.hikari.pool.HikariPool$PoolInitializationException"><![CDATA[com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -288,7 +288,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 18 Command successfully executed : insert into clu...
 ]]></system-err>
   </testcase>
-  <testcase name="addShouldHandleNullBirthDate" classname="dao.ChildDBTest" time="1.114">
+  <testcase name="addShouldHandleNullBirthDate" classname="dao.ChildDBTest" time="1.132">
     <error message="Failed to initialize pool: FATAL: role &quot;postgres&quot; does not exist" type="com.zaxxer.hikari.pool.HikariPool$PoolInitializationException"><![CDATA[com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -345,7 +345,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 18 Command successfully executed : insert into clu...
 ]]></system-err>
   </testcase>
-  <testcase name="findChildrenWithoutBirthDateShouldReturnChildrenWithNullBirthDate" classname="dao.ChildDBTest" time="1.093">
+  <testcase name="findChildrenWithoutBirthDateShouldReturnChildrenWithNullBirthDate" classname="dao.ChildDBTest" time="1.114">
     <error message="Failed to initialize pool: FATAL: role &quot;postgres&quot; does not exist" type="com.zaxxer.hikari.pool.HikariPool$PoolInitializationException"><![CDATA[com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)

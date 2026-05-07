@@ -120,11 +120,11 @@ class ChildDBTest {
         // Child 3 - 15 years old
         Child child3 = db.addChild(new Child("Child", "Fifteen", today.minusYears(15)));
         // Act - Get all children at least 10 years old
-        List<Child> result = db.findChildrenWithMinimumAge(0);
+        List<Child> result = db.findChildrenWithMinimumAge(10);
         // Assert
-        assertTrue(result.contains(child1), "10-years-old child should be included");
-        assertTrue(result.contains(child2), "5-years-old child should NOT be included");
-        assertTrue(result.contains(child3), "15-years-old child should be included");
+        assertTrue(result.contains(child1), "10 years old child should be included");
+        assertFalse(result.contains(child2), "5 years old child should NOT be included");
+        assertTrue(result.contains(child3), "15 years old child should be included");
         // Verify that the result contains children with correct ages
         for (Child child : result) {
             assertNotNull(child.birthDate(), "Birth date should not be null");

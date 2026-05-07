@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: dao.CategoryDBTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 18.74 s <<< FAILURE! -- in dao.CategoryDBTest
-dao.CategoryDBTest.findCategoriesByTitlePart -- Time elapsed: 2.414 s <<< ERROR!
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 18.84 s <<< FAILURE! -- in dao.CategoryDBTest
+dao.CategoryDBTest.findCategoriesByTitlePart -- Time elapsed: 2.587 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -31,7 +31,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.updateCategoryShouldThrowExceptionForNullCategory -- Time elapsed: 1.072 s <<< ERROR!
+dao.CategoryDBTest.updateCategoryShouldThrowExceptionForNullCategory -- Time elapsed: 1.071 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -60,7 +60,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.addCategoryShouldThrowExceptionForNullTitle -- Time elapsed: 1.078 s <<< ERROR!
+dao.CategoryDBTest.addCategoryShouldThrowExceptionForNullTitle -- Time elapsed: 1.086 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -89,7 +89,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.findAllChildrenInCategory -- Time elapsed: 1.076 s <<< ERROR!
+dao.CategoryDBTest.findAllChildrenInCategory -- Time elapsed: 1.092 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -118,7 +118,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.addCategoryShouldThrowExceptionForEmptyTitle -- Time elapsed: 1.084 s <<< ERROR!
+dao.CategoryDBTest.addCategoryShouldThrowExceptionForEmptyTitle -- Time elapsed: 1.101 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -147,7 +147,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.incrementCategoryCountWhenAddNewCategory -- Time elapsed: 1.083 s <<< ERROR!
+dao.CategoryDBTest.incrementCategoryCountWhenAddNewCategory -- Time elapsed: 1.071 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -176,7 +176,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.updateCategoryShouldThrowExceptionForNullId -- Time elapsed: 1.078 s <<< ERROR!
+dao.CategoryDBTest.updateCategoryShouldThrowExceptionForNullId -- Time elapsed: 1.085 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -205,7 +205,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.updateCategoryShouldThrowExceptionForNullTitle -- Time elapsed: 1.077 s <<< ERROR!
+dao.CategoryDBTest.updateCategoryShouldThrowExceptionForNullTitle -- Time elapsed: 1.081 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -234,7 +234,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.deleteExistingCategory -- Time elapsed: 1.080 s <<< ERROR!
+dao.CategoryDBTest.deleteExistingCategory -- Time elapsed: 1.056 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -263,7 +263,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.unchangedCategoryCountWhenAddCategoryWithExistingTitle -- Time elapsed: 1.080 s <<< ERROR!
+dao.CategoryDBTest.unchangedCategoryCountWhenAddCategoryWithExistingTitle -- Time elapsed: 1.092 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -292,7 +292,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.updateExistingCategory -- Time elapsed: 1.075 s <<< ERROR!
+dao.CategoryDBTest.updateExistingCategory -- Time elapsed: 1.071 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -321,7 +321,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.addCategoryShouldThrowExceptionForNullCategory -- Time elapsed: 1.154 s <<< ERROR!
+dao.CategoryDBTest.addCategoryShouldThrowExceptionForNullCategory -- Time elapsed: 1.085 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -350,7 +350,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.findAllChildrenInCategoryShouldThrowExceptionForNullCategoryId -- Time elapsed: 1.085 s <<< ERROR!
+dao.CategoryDBTest.findAllChildrenInCategoryShouldThrowExceptionForNullCategoryId -- Time elapsed: 1.060 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -379,7 +379,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.findCategoriesByTitlePartShouldThrowExceptionForNullTitlePart -- Time elapsed: 1.079 s <<< ERROR!
+dao.CategoryDBTest.findCategoriesByTitlePartShouldThrowExceptionForNullTitlePart -- Time elapsed: 1.082 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -408,7 +408,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.deleteCategoryShouldThrowExceptionForNullId -- Time elapsed: 1.072 s <<< ERROR!
+dao.CategoryDBTest.deleteCategoryShouldThrowExceptionForNullId -- Time elapsed: 1.075 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -437,7 +437,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.CategoryDBTest.updateCategoryShouldThrowExceptionForEmptyTitle -- Time elapsed: 1.081 s <<< ERROR!
+dao.CategoryDBTest.updateCategoryShouldThrowExceptionForEmptyTitle -- Time elapsed: 1.074 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)

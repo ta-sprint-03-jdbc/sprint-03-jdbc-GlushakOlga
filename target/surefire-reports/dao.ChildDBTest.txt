@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: dao.ChildDBTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 6.640 s <<< FAILURE! -- in dao.ChildDBTest
-dao.ChildDBTest.updateShouldUpdateExistingChild -- Time elapsed: 1.132 s <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 6.728 s <<< FAILURE! -- in dao.ChildDBTest
+dao.ChildDBTest.updateShouldUpdateExistingChild -- Time elapsed: 1.127 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -34,7 +34,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.ChildDBTest.addShouldAddChildAndReturnWithId -- Time elapsed: 1.096 s <<< ERROR!
+dao.ChildDBTest.addShouldAddChildAndReturnWithId -- Time elapsed: 1.121 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -66,7 +66,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.ChildDBTest.deleteShouldDeleteExistingChild -- Time elapsed: 1.086 s <<< ERROR!
+dao.ChildDBTest.deleteShouldDeleteExistingChild -- Time elapsed: 1.120 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -98,7 +98,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.ChildDBTest.findChildrenWithMinimumAgeShouldReturnChildrenWithMinimumAge -- Time elapsed: 1.109 s <<< ERROR!
+dao.ChildDBTest.findChildrenWithMinimumAgeShouldReturnChildrenWithMinimumAge -- Time elapsed: 1.104 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -130,7 +130,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.ChildDBTest.addShouldHandleNullBirthDate -- Time elapsed: 1.114 s <<< ERROR!
+dao.ChildDBTest.addShouldHandleNullBirthDate -- Time elapsed: 1.132 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
@@ -162,7 +162,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: role "postgres" does not ex
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
 	... 9 more
 
-dao.ChildDBTest.findChildrenWithoutBirthDateShouldReturnChildrenWithNullBirthDate -- Time elapsed: 1.093 s <<< ERROR!
+dao.ChildDBTest.findChildrenWithoutBirthDateShouldReturnChildrenWithNullBirthDate -- Time elapsed: 1.114 s <<< ERROR!
 com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: role "postgres" does not exist
 	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
